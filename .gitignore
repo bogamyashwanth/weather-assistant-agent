@@ -1,0 +1,53 @@
+# Environment variables
+.env
+.env.local
+
+# Dependencies
+node_modules/
+.pnpm-store/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Build outputs
+dist/
+build/
+.mastra/
+*.egg-info/
+*.d.ts
+*.d.ts.map
+*.js
+!vitest.config.ts
+!scenario.config.mjs
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# LangWatch materialized prompts (generated)
+prompts/.materialized/
+
+# Temporary files
+.temp/
+tmp/

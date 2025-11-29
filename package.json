@@ -1,0 +1,48 @@
+{
+  "name": "mastra-weather-agent",
+  "version": "1.0.0",
+  "description": "Production-ready AI weather agent built with Mastra, following LangWatch best practices",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "mastra dev",
+    "build": "tsc",
+    "start": "tsx src/index.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:scenarios": "vitest run tests/scenarios",
+    "prompt:init": "langwatch prompt init",
+    "prompt:create": "langwatch prompt create",
+    "prompt:sync": "langwatch prompt sync",
+    "prompt:list": "langwatch prompt list"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "mastra",
+    "langwatch",
+    "weather"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.23.0",
+  "dependencies": {
+    "@ai-sdk/google": "^2.0.44",
+    "@langwatch/scenario": "^0.3.0",
+    "@mastra/core": "^0.24.6",
+    "@mastra/libsql": "^0.16.3",
+    "@mastra/loggers": "^0.10.19",
+    "@mastra/memory": "^0.15.12",
+    "ai": "5.0.104",
+    "langwatch": "0.8.2",
+    "mastra": "^0.18.6",
+    "zod": "^4.1.13"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "dotenv": "^17.2.3",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.14"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "lockfileVersion": 1,
+  "prompts": {
+    "weather-assistant": {
+      "version": 3,
+      "versionId": "w4fYZcfiYq_TbsjzBUjBI",
+      "materialized": "prompts/weather-assistant.prompt.yaml"
+    }
+  }
+}

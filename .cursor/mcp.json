@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "langwatch": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@langwatch/mcp-server"
+      ]
+    },
+    "toolbox": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery/toolbox",
+        "--key",
+        "9103690b-a8f3-42e6-b157-8ac4d592155a"
+      ]
+    },
+    "mastra": {
+      "type": "stdio",
+      "command": "npx",
+      "args": [
+        "-y",
+        "@mastra/mcp-docs-server"
+      ]
+    }
+  }
+}

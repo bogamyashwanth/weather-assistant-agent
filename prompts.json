@@ -1,0 +1,5 @@
+{
+  "prompts": {
+    "weather-assistant": "file:prompts/weather-assistant.prompt.yaml"
+  }
+}
