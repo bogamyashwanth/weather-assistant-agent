@@ -56,6 +56,41 @@ pnpm start
 
 The Mastra dev server will start at `http://localhost:4111` where you can interact with your agent through the web UI.
 
+## Deployment
+
+### Deploy to Vercel
+
+This project is ready to deploy to Vercel with zero configuration:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/bogamyashwanth/weather-assistant-agent)
+
+**Manual Deployment:**
+
+1. Push your code to GitHub (already done!)
+2. Go to [Vercel](https://vercel.com) and import your repository
+3. Add environment variables in Vercel project settings:
+   - `GEMINI_API_KEY` - Your Google Gemini API key
+   - `LANGWATCH_API_KEY` - Your LangWatch API key (optional)
+4. Deploy!
+
+The deployment includes:
+- ✅ Serverless API endpoint at `/api/index`
+- ✅ Interactive web chat interface at root URL
+- ✅ Automatic builds on every push
+- ✅ Production-ready configuration
+
+**Testing your deployment:**
+
+```bash
+# Test the API endpoint
+curl -X POST https://your-app.vercel.app/api/index \
+  -H "Content-Type: application/json" \
+  -d '{"message": "What is the weather in Tokyo?"}'
+
+# Or visit the web interface
+# https://your-app.vercel.app
+```
+
 ## Project Structure
 
 ```
