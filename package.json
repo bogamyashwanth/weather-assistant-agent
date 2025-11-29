@@ -6,7 +6,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "mastra dev",
-    "build": "tsc",
+    "build": "tsc && mkdir -p public && cp public/index.html dist/public/index.html 2>/dev/null || true",
+    "vercel-build": "pnpm build",
     "start": "tsx src/index.ts",
     "test": "vitest run",
     "test:watch": "vitest",
